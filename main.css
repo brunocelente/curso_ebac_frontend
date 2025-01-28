@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Giga", serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #494949;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 400px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 50px;
+    color: #d5b4ff;
+}
+/*-----FORMULÁRIO-----*/
+#input-nome-tarefa, #btn-cadastrar {
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+#input-nome-tarefa {
+    width: 700px;
+    font-size: 24px;
+    border: none;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+}
+
+#input-nome-tarefa::placeholder {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.123);
+}
+
+#btn-cadastrar {
+    width: 250px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #6c3baa;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+}
+
+#btn-cadastrar:hover {
+    cursor: pointer;
+    background-color: #381763;
+}
+
+#tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 10px;
+    min-width: 200px;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+li input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
